@@ -65,5 +65,5 @@ class LoginSerializer(serializers.ModelSerializer):
         
 
         token = Token.objects.get(user=user)
-        data = str(token)
-        return data
+        
+        return str(token)
